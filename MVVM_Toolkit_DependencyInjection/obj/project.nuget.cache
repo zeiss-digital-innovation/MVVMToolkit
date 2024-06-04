@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "dgSpecHash": "5k1T7cfrjYbaIG2oAW08VJurKirNBm/SX3gUEkAfIYZ02JnWFeFMwdrkXajOO3YaxkDZsgdtgoPeJygqkR9tlw==",
+  "success": true,
+  "projectFilePath": "D:\\Weiterbildung\\Test Projects\\MVVM_Toolkit_Test\\MVVM_Toolkit_DependencyInjection\\MVVM_Toolkit_DependencyInjection.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\disbusch\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
+    "C:\\Users\\disbusch\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\disbusch\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://artifactory-medmuc.zeiss.org:8084/artifactory/api/nuget/nuget-local/'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    },
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://artifactory-medmuc.zeiss.org:8084/artifactory/api/nuget/nim-nuget-local/'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    },
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://artifactory-medmuc.zeiss.org:8084/artifactory/api/nuget/nim-nuget-release-local/'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    },
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://artifactory-medmuc.zeiss.org:8084/artifactory/api/nuget/nuget-release/'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
