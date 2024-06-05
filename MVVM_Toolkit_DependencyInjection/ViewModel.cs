@@ -10,9 +10,9 @@ namespace MVVM_Toolkit_DependencyInjection
 {
     public partial class ViewModel : ObservableObject
     {
-	    private readonly IMessageBoxService _messageBoxService;
+	    private readonly IMessageBoxService? _messageBoxService;
 
-	    public ViewModel(IMessageBoxService messageBoxService)
+	    public ViewModel(IMessageBoxService? messageBoxService)
 	    {
 		    _messageBoxService = messageBoxService;
 	    }

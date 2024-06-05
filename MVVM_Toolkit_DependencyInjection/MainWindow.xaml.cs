@@ -1,13 +1,6 @@
-﻿using System.Text;
+﻿using CommunityToolkit.Mvvm.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace MVVM_Toolkit_DependencyInjection
 {
@@ -19,6 +12,28 @@ namespace MVVM_Toolkit_DependencyInjection
 		public MainWindow()
 		{
 			InitializeComponent();
+			ConfigureServices();
+
+			IMessageBoxService? messageBoxService = Ioc.Default.GetService<IMessageBoxService>();
+			ViewModel viewModel = new(messageBoxService);
+			this.DataContext = viewModel;
+		}
+
+		private static void ConfigureServices()
+		{
+			IServiceProvider serviceProvider = BuildServiceProvider();
+			Ioc.Default.ConfigureServices(serviceProvider);
+		}
+
+		/// <summary>
+		/// Create a service provider using Microsoft.Extensions.DependencyInjection
+		/// </summary>
+		private static ServiceProvider BuildServiceProvider()
+		{
+			ServiceCollection services = new();
+			services.AddSingleton<IMessageBoxService, MessageBoxService>();
+
+			return services.BuildServiceProvider();
 		}
 	}
 }
