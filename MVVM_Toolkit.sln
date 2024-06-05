@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVM_Toolkit_Inputs", "..\Inputs\MVVM_Toolkit_Inputs.csproj", "{18A9B40A-F0CE-406E-8411-0963F93BDE1B}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVM_Toolkit_ObservableValidator", "Observable_Validator\MVVM_Toolkit_ObservableValidator.csproj", "{21F8232D-F733-4434-B2D2-4E500C7B5DDA}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVM_Toolkit_ObservableProperties", "Observable_Properties\MVVM_Toolkit_ObservableProperties.csproj", "{4290D3D7-7FF5-4356-B226-A969CF32DF0B}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVM_Toolkit_ObservableObject", "Observable_Object\MVVM_Toolkit_ObservableObject.csproj", "{7DF65405-3E89-45E9-8188-86E9DD3F9D4C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVM_Toolkit_DependencyInjection", "MVVM_Toolkit_DependencyInjection\MVVM_Toolkit_DependencyInjection.csproj", "{518926C3-5360-4CC3-9BE5-87E0670F991E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM_Toolkit_Messaging", "MVVM_Toolkit_Messaging\MVVM_Toolkit_Messaging.csproj", "{A8AED832-A2B2-466C-8640-19C18616F406}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVM_Toolkit_ObservableObject", "MVVM_Toolkit_ObservableObject\MVVM_Toolkit_ObservableObject.csproj", "{9079059A-F985-4FB1-9070-CFCF0F48A9EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVM_Toolkit_ObservableProperties", "MVVM_Toolkit_ObservableProperties\MVVM_Toolkit_ObservableProperties.csproj", "{AD1E8943-1F91-496F-9CF2-208CAF7C2CF9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVM_Toolkit_ObservableValidator", "MVVM_Toolkit_ObservableValidator\MVVM_Toolkit_ObservableValidator.csproj", "{9A4E7B16-AC63-44EE-83BF-66BA427CB472}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVM_Toolkit_Inputs", "MVVM_Toolkit_Inputs\MVVM_Toolkit_Inputs.csproj", "{AF9D0058-C0A4-4B7D-9B31-9B25CF2BF606}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,26 +21,30 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{18A9B40A-F0CE-406E-8411-0963F93BDE1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{18A9B40A-F0CE-406E-8411-0963F93BDE1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{18A9B40A-F0CE-406E-8411-0963F93BDE1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{18A9B40A-F0CE-406E-8411-0963F93BDE1B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{21F8232D-F733-4434-B2D2-4E500C7B5DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{21F8232D-F733-4434-B2D2-4E500C7B5DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{21F8232D-F733-4434-B2D2-4E500C7B5DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{21F8232D-F733-4434-B2D2-4E500C7B5DDA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4290D3D7-7FF5-4356-B226-A969CF32DF0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4290D3D7-7FF5-4356-B226-A969CF32DF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4290D3D7-7FF5-4356-B226-A969CF32DF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4290D3D7-7FF5-4356-B226-A969CF32DF0B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7DF65405-3E89-45E9-8188-86E9DD3F9D4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7DF65405-3E89-45E9-8188-86E9DD3F9D4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7DF65405-3E89-45E9-8188-86E9DD3F9D4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7DF65405-3E89-45E9-8188-86E9DD3F9D4C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{518926C3-5360-4CC3-9BE5-87E0670F991E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{518926C3-5360-4CC3-9BE5-87E0670F991E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{518926C3-5360-4CC3-9BE5-87E0670F991E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{518926C3-5360-4CC3-9BE5-87E0670F991E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8AED832-A2B2-466C-8640-19C18616F406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8AED832-A2B2-466C-8640-19C18616F406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8AED832-A2B2-466C-8640-19C18616F406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8AED832-A2B2-466C-8640-19C18616F406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9079059A-F985-4FB1-9070-CFCF0F48A9EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9079059A-F985-4FB1-9070-CFCF0F48A9EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9079059A-F985-4FB1-9070-CFCF0F48A9EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9079059A-F985-4FB1-9070-CFCF0F48A9EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD1E8943-1F91-496F-9CF2-208CAF7C2CF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD1E8943-1F91-496F-9CF2-208CAF7C2CF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD1E8943-1F91-496F-9CF2-208CAF7C2CF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD1E8943-1F91-496F-9CF2-208CAF7C2CF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A4E7B16-AC63-44EE-83BF-66BA427CB472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A4E7B16-AC63-44EE-83BF-66BA427CB472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A4E7B16-AC63-44EE-83BF-66BA427CB472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A4E7B16-AC63-44EE-83BF-66BA427CB472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF9D0058-C0A4-4B7D-9B31-9B25CF2BF606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF9D0058-C0A4-4B7D-9B31-9B25CF2BF606}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF9D0058-C0A4-4B7D-9B31-9B25CF2BF606}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF9D0058-C0A4-4B7D-9B31-9B25CF2BF606}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
